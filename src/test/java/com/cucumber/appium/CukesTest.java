@@ -28,23 +28,12 @@ public class CukesTest {
 
 	@BeforeClass
 	public static void startAppium() {
-		startAppiumServer();
+		// startAppiumServer();
 	}
 
 	@AfterClass
 	public static void stopAppium() {
-		stopAppiumServer();
-	}
-
-	// @Test
-	public void verifyInvalidLogin() {
-		try {
-			userSteps.loginPageInvalidDataInput();
-			userSteps.enterLoginData();
-			userSteps.checkErrorMessage();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		// stopAppiumServer();
 	}
 
 }
